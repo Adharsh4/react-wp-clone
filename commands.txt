@@ -1,0 +1,48 @@
+npm install firebase-tools
+npm install @material-ui/core
+npm install @material-ui/icons
+
+git init ( install git and set path) this is for deployment
+npm init ( change server from index.js to server.js)
+npm i express mongoose
+npm i -g nodemon
+npm i pusher
+npm i cors
+npm i pusher-js
+npm i axios
+
+
+
+have deployed both heroku and frontend to firebase
+so  open the link https://wp-mern.web.app/
+
+
+
+IK6aYzf9CoJJea4A
+
+
+
+we will create change stream for our collection and whenever there is a change
+ in the collection(new message added) change stream will trigger the pusher, 
+and it gonna upload the message to pusher and we will be connecting to our 
+frontend so the pusher server will trigger our frontend and force push down our 
+data .... 
+
+
+tht time we will make new req to our backend and everything refresh
+
+
+In simple words we push mesage from frontend to backend and after it gets stored in backend, pusher will be
+listening to the backend since there is a connection between backend
+and pusher...so at that time pusher refreshs the front 
+end so that the messages are in sync in front end...(pusher and front end also has the connection)
+we will get the front end and backend code for pusher from their official websote
+
+
+
+
+Change stream is gonna listen to the db and trigger the pusher if there is any change
+
+
+
+proc file is needed for heroku if it has to run any other commands other than npm start
